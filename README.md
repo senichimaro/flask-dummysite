@@ -9,17 +9,16 @@ This exercise creates a TODOs app that is a basic CRUD operations app.
 3. [x] Now let's modify this app to get a Todo App. The model is a simple database that have a single table which saves one field called 'description'. The view is one input in a form which targets '/todos/create' with POST method and a list item render. The controller catch the request body, create the record in the database, and redirects (by function name) to index to see this object loaded.
 
 4. Setup Migrations. Migrations allow us to track database changes give us the opportunity to keep or discard changes and to move to previous versions. This comes very important to make changes in a secure manner and to handle/prevent data lost.
-  - Setup Migrations.
-    1. We'll use Flask-Migrate package `pip install Flask-Migrate`
-    2. from `flask_migrate` import Migrate and pass app and db into an instance
-    3. initialize migrations shell from CMD CLI `flask db init`
-    4. initialize db version from CMD CLI `flask db migrate`
-    5. implement version from CMD CLI `flask db upgrade`
-    6. Changes to Database
-      1. implement changes into their class
-      2. db version `flask db migrate`
-      3. apply `flask db upgrade`
-      4. working with existing data **TOPIC**
+  - 1. We'll use Flask-Migrate package `pip install Flask-Migrate`
+  - 2. from `flask_migrate` import Migrate and pass app and db into an instance
+  - 3. initialize migrations shell from CMD CLI `flask db init`
+  - 4. initialize db version from CMD CLI `flask db migrate`
+  - 5. implement version from CMD CLI `flask db upgrade`
+  - 6. Changes to Database
+    - 1. implement changes into their class
+    - 2. db version `flask db migrate`
+    - 3. apply `flask db upgrade`
+    - 4. working with existing data **TOPIC**
 
 
 ## 4. working with existing data
