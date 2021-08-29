@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>todo app</title>
+  </head>
+  <body>
+    <ul>
+      {% for item in data %}
+        <li>{{ item.name }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
